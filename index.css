@@ -1,0 +1,67 @@
+:root {
+    --color_1: #006600;
+    --color_2: #001600;
+    --color_3: #000800;
+    --color_back: #000000;
+    /* --font: 'Rubik', sans-serif */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color_back);
+    color: var(--color_1);
+    font-size: 20px;
+    display: grid;
+    height: 100vh;
+}
+
+.icon {
+    font-size: 100px;
+    font-family: "Segoe UI Emoji";
+}
+
+#result {
+    align-self: center;
+    justify-self: center;
+}
+
+svg {
+    /* border: solid 1px red; */
+    --size: 10vw;
+    width: var(--size);
+    height: var(--size);
+}
+
+.on {
+    opacity: 1;
+    transition: all .6s;
+    fill: #ffffff;
+    stroke: none;
+    filter: url(#filter877)
+}
+
+.off {
+    opacity: .1;
+    transition: all .6s;
+    fill: #ffffff;
+    fill-opacity: 1;
+    stroke: none;
+    filter: url(#filter877)
+}
+
+.target-svg {
+    stroke: none;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+svg:hover .on {
+    opacity: .1;
+}
+
+svg:hover .off {
+    opacity: .3;
+}
