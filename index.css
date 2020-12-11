@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "suspiria";
+    src: url("./fonts/suspiria.eot");
+    /* IE9 Compat Modes */
+    src: url("./fonts/suspiria.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/suspiria.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/suspiria.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/suspiria.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/suspiria.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/suspiria.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --color_1: #006600;
     --color_2: #001600;
@@ -14,6 +29,7 @@ body {
     font-size: 20px;
     display: grid;
     height: 100vh;
+    font-family: 'suspiria';
 }
 
 .icon {
@@ -21,7 +37,41 @@ body {
     font-family: "Segoe UI Emoji";
 }
 
+#title {
+    height: 50vh;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+}
+
+@keyframes show-suspiria {
+    0% {
+        letter-spacing: 0;
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.2;
+    }
+    100% {
+        letter-spacing: 3vw;
+        opacity: 1;
+    }
+}
+
+#title div {
+    position: absolute;
+    bottom: 0vh;
+    font-size: 4vw;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    transform: translateX(-50%);
+    animation: show-suspiria 3s 1;
+    animation-timing-function: linear;
+}
+
 #result {
+    height: 50vh;
     align-self: center;
     justify-self: center;
 }
