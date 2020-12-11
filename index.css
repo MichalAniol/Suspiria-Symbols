@@ -38,7 +38,7 @@ body {
 }
 
 #title {
-    height: 50vh;
+    height: 45vh;
     align-self: center;
     justify-self: center;
     position: relative;
@@ -49,7 +49,11 @@ body {
         letter-spacing: 0;
         opacity: 0;
     }
-    60% {
+    15% {
+        letter-spacing: 0;
+        opacity: 0;
+    }
+    70% {
         opacity: 0.2;
     }
     100% {
@@ -61,17 +65,17 @@ body {
 #title div {
     position: absolute;
     bottom: 0vh;
-    font-size: 4vw;
+    font-size: 3vw;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 3vw;
     transform: translateX(-50%);
-    animation: show-suspiria 3s 1;
+    animation: show-suspiria 4s 1;
     animation-timing-function: linear;
 }
 
 #result {
-    height: 50vh;
+    height: 55vh;
     align-self: center;
     justify-self: center;
 }
